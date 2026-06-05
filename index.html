@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -45,7 +46,9 @@
       --sidebar: 236px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     html {
       min-height: 100%;
@@ -65,9 +68,20 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    button, input, select, textarea { font: inherit; }
-    button { touch-action: manipulation; }
-    a { color: inherit; }
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      touch-action: manipulation;
+    }
+
+    a {
+      color: inherit;
+    }
 
     .sr-only {
       position: absolute;
@@ -124,7 +138,10 @@
       flex: 0 0 auto;
     }
 
-    .brand-mark svg { width: 26px; height: 26px; }
+    .brand-mark svg {
+      width: 26px;
+      height: 26px;
+    }
 
     .brand-title {
       margin: 0;
@@ -184,7 +201,9 @@
       box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
     }
 
-    .nav-link:active { transform: translateY(1px); }
+    .nav-link:active {
+      transform: translateY(1px);
+    }
 
     .nav-link .icon {
       width: 27px;
@@ -202,7 +221,8 @@
       color: var(--olive-900);
     }
 
-    .icon svg, svg.icon-svg {
+    .icon svg,
+    svg.icon-svg {
       width: 18px;
       height: 18px;
       stroke: currentColor;
@@ -242,7 +262,9 @@
       border-radius: 0 0 24px 24px;
     }
 
-    .page-title-wrap { min-width: 0; }
+    .page-title-wrap {
+      min-width: 0;
+    }
 
     .eyebrow {
       margin: 0 0 5px;
@@ -331,7 +353,9 @@
       outline: none;
     }
 
-    .btn:active { transform: translateY(1px) scale(0.99); }
+    .btn:active {
+      transform: translateY(1px) scale(0.99);
+    }
 
     .btn.primary {
       background: linear-gradient(135deg, var(--olive-700), var(--olive-500));
@@ -339,7 +363,9 @@
       border-color: transparent;
     }
 
-    .btn.primary:hover { background: linear-gradient(135deg, var(--olive-800), var(--olive-600)); }
+    .btn.primary:hover {
+      background: linear-gradient(135deg, var(--olive-800), var(--olive-600));
+    }
 
     .btn.soft {
       background: var(--olive-100);
@@ -361,7 +387,9 @@
       box-shadow: none;
     }
 
-    .btn.block { width: 100%; }
+    .btn.block {
+      width: 100%;
+    }
 
     .icon-btn {
       width: var(--tap);
@@ -370,12 +398,22 @@
       flex: 0 0 auto;
     }
 
-    .mobile-menu-btn { display: none; }
+    .mobile-menu-btn {
+      display: none;
+    }
 
-    .view { display: none; }
-    .view.active { display: block; }
+    .view {
+      display: none;
+    }
 
-    .grid { display: grid; gap: 18px; }
+    .view.active {
+      display: block;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
 
     .grid.two {
       grid-template-columns: minmax(0, 1.15fr) minmax(310px, 0.85fr);
@@ -392,7 +430,9 @@
       border-radius: var(--radius-lg);
     }
 
-    .card { overflow: hidden; }
+    .card {
+      overflow: hidden;
+    }
 
     .card-head {
       display: flex;
@@ -420,7 +460,9 @@
       font-size: 0.93rem;
     }
 
-    .card-body { padding: 20px 22px 22px; }
+    .card-body {
+      padding: 20px 22px 22px;
+    }
 
     .dashboard-hero {
       display: block;
@@ -451,7 +493,10 @@
       border: 34px solid rgba(255, 255, 255, 0.08);
     }
 
-    .hero-content { position: relative; z-index: 1; }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
 
     .status-pill,
     .chip {
@@ -512,12 +557,29 @@
       background: var(--olive-500);
     }
 
-    .metric-card.total:before { background: var(--olive-800); }
-    .metric-card.split:before { background: #93a860; }
-    .metric-card.person-a:before { background: #668346; }
-    .metric-card.person-b:before { background: #a1ac6b; }
-    .metric-card.due:before { background: #9a6a08; }
-    .metric-card.due.settled:before { background: var(--success); }
+    .metric-card.total:before {
+      background: var(--olive-800);
+    }
+
+    .metric-card.split:before {
+      background: #93a860;
+    }
+
+    .metric-card.person-a:before {
+      background: #668346;
+    }
+
+    .metric-card.person-b:before {
+      background: #a1ac6b;
+    }
+
+    .metric-card.due:before {
+      background: #9a6a08;
+    }
+
+    .metric-card.due.settled:before {
+      background: var(--success);
+    }
 
     .metric-label {
       display: flex;
@@ -587,14 +649,37 @@
       box-shadow: var(--shadow);
     }
 
-    .summary-card.featured:before { background: rgba(255, 255, 255, 0.25); }
-    .summary-card.featured .metric-label { color: rgba(255, 255, 255, 0.74); }
-    .summary-card.featured .summary-big { color: #fff; }
-    .summary-card.split:before { background: #93a860; }
-    .summary-card.person-a:before { background: #668346; }
-    .summary-card.person-b:before { background: #a1ac6b; }
-    .summary-card.due:before { background: #9a6a08; }
-    .summary-card.due.settled:before { background: var(--success); }
+    .summary-card.featured:before {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .summary-card.featured .metric-label {
+      color: rgba(255, 255, 255, 0.74);
+    }
+
+    .summary-card.featured .summary-big {
+      color: #fff;
+    }
+
+    .summary-card.split:before {
+      background: #93a860;
+    }
+
+    .summary-card.person-a:before {
+      background: #668346;
+    }
+
+    .summary-card.person-b:before {
+      background: #a1ac6b;
+    }
+
+    .summary-card.due:before {
+      background: #9a6a08;
+    }
+
+    .summary-card.due.settled:before {
+      background: var(--success);
+    }
 
     .summary-big {
       display: block;
@@ -644,8 +729,15 @@
       white-space: nowrap;
     }
 
-    .progress-stack { display: grid; gap: 14px; }
-    .person-progress { display: grid; gap: 8px; }
+    .progress-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .person-progress {
+      display: grid;
+      gap: 8px;
+    }
 
     .progress-head {
       display: flex;
@@ -671,7 +763,10 @@
       background: linear-gradient(90deg, var(--olive-700), var(--olive-300));
     }
 
-    .list { display: grid; gap: 10px; }
+    .list {
+      display: grid;
+      gap: 10px;
+    }
 
     .mini-row,
     .ledger-row {
@@ -714,7 +809,10 @@
       color: var(--olive-900);
     }
 
-    .breakdown-list { display: grid; gap: 13px; }
+    .breakdown-list {
+      display: grid;
+      gap: 13px;
+    }
 
     .breakdown-item {
       display: grid;
@@ -730,7 +828,9 @@
       font-weight: 750;
     }
 
-    .breakdown-head span:last-child { color: var(--olive-950); }
+    .breakdown-head span:last-child {
+      color: var(--olive-950);
+    }
 
     .breakdown-bar {
       height: 10px;
@@ -814,7 +914,9 @@
       white-space: nowrap;
     }
 
-    tr:last-child td { border-bottom: 0; }
+    tr:last-child td {
+      border-bottom: 0;
+    }
 
     tfoot td {
       background: var(--olive-50);
@@ -822,9 +924,21 @@
       border-bottom: 0;
     }
 
-    .amount { text-align: right; white-space: nowrap; }
-    .desc-main { font-weight: 850; color: var(--olive-950); }
-    .desc-sub { margin-top: 6px; color: var(--muted); font-size: 0.88rem; }
+    .amount {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .desc-main {
+      font-weight: 850;
+      color: var(--olive-950);
+    }
+
+    .desc-sub {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
 
     .row-actions {
       display: inline-flex;
@@ -833,7 +947,9 @@
       flex-wrap: wrap;
     }
 
-    .bar-cell { min-width: 210px; }
+    .bar-cell {
+      min-width: 210px;
+    }
 
     .compare-bar {
       margin-top: 10px;
@@ -849,8 +965,14 @@
       gap: 14px;
     }
 
-    .field { display: grid; gap: 7px; }
-    .field.full { grid-column: 1 / -1; }
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
 
     label {
       color: var(--olive-900);
@@ -905,7 +1027,9 @@
       -webkit-backdrop-filter: blur(10px);
     }
 
-    .modal.open { display: flex; }
+    .modal.open {
+      display: flex;
+    }
 
     .modal-panel {
       width: min(760px, 100%);
@@ -951,7 +1075,9 @@
       line-height: 1;
     }
 
-    .modal-body { padding: 22px 24px 24px; }
+    .modal-body {
+      padding: 22px 24px 24px;
+    }
 
     .toast {
       position: fixed;
@@ -1000,68 +1126,537 @@
     }
 
     @media (max-width: 1180px) {
+
       .summary-grid,
-      .summary-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .summary-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 920px) {
-      .app-shell { grid-template-columns: 1fr; }
+      .app-shell {
+        grid-template-columns: 1fr;
+      }
+
       .sidebar {
         position: fixed;
         transform: translateX(-105%);
         transition: transform 200ms ease;
         width: min(var(--sidebar), calc(100vw - 42px));
       }
-      body.nav-open .sidebar { transform: translateX(0); }
-      body.nav-open .scrim { display: block; }
-      .mobile-menu-btn { display: inline-flex; }
-      .topbar { align-items: flex-start; }
-      .toolbar { justify-content: flex-start; }
+
+      body.nav-open .sidebar {
+        transform: translateX(0);
+      }
+
+      body.nav-open .scrim {
+        display: block;
+      }
+
+      .mobile-menu-btn {
+        display: inline-flex;
+      }
+
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .toolbar {
+        justify-content: flex-start;
+      }
+
       .summary-grid,
-      .summary-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .grid.two { grid-template-columns: 1fr; }
-      .settings-grid { grid-template-columns: 1fr; }
-      .fab { display: grid; }
-      .toolbar [data-open-expense] { display: none; }
+      .summary-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .grid.two {
+        grid-template-columns: 1fr;
+      }
+
+      .settings-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fab {
+        display: grid;
+      }
+
+      .toolbar [data-open-expense] {
+        display: none;
+      }
     }
 
     @media (max-width: 640px) {
-      .main-area { padding: 14px 12px 92px; }
-      .topbar { display: grid; }
-      .toolbar { gap: 8px; }
-      .month-control { width: 100%; justify-content: space-between; }
-      .month-input { flex: 1; width: auto; text-align: center; }
+      .main-area {
+        padding: 14px 12px 92px;
+      }
+
+      .topbar {
+        display: grid;
+      }
+
+      .toolbar {
+        gap: 8px;
+      }
+
+      .month-control {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .month-input {
+        flex: 1;
+        width: auto;
+        text-align: center;
+      }
+
       .summary-grid,
-      .summary-cards { grid-template-columns: 1fr; }
-      .hero-card { min-height: 190px; padding: 22px; }
-      .card-head { display: grid; }
-      .filters { grid-template-columns: 1fr; }
-      .form-grid { grid-template-columns: 1fr; }
-      .settlement-panel { grid-template-columns: 1fr; }
-      .settlement-amount { white-space: normal; }
-      .modal { align-items: stretch; padding: 10px; }
-      .modal-panel { max-height: calc(100vh - 20px); border-radius: 24px; }
+      .summary-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        min-height: 190px;
+        padding: 22px;
+      }
+
+      .card-head {
+        display: grid;
+      }
+
+      .filters {
+        grid-template-columns: 1fr;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .settlement-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .settlement-amount {
+        white-space: normal;
+      }
+
+      .modal {
+        align-items: stretch;
+        padding: 10px;
+      }
+
+      .modal-panel {
+        max-height: calc(100vh - 20px);
+        border-radius: 24px;
+      }
     }
 
     @media print {
-      body { background: #fff; }
-      .sidebar, .topbar, .fab, .modal, .toast, .scrim, .btn, .row-actions { display: none !important; }
-      .app-shell { display: block; }
-      .main-area { padding: 0; }
-      .view { display: none !important; }
-      .view.active { display: block !important; }
-      .card, .metric-card, .summary-card, .hero-card { box-shadow: none; background: #fff; color: #000; }
-      .summary-grid, .summary-cards { grid-template-columns: repeat(2, 1fr); }
-      table { min-width: 0; }
+      body {
+        background: #fff !important;
+      }
+
+      .sidebar,
+      .topbar,
+      .fab,
+      .modal,
+      .toast,
+      .scrim,
+      .btn,
+      .row-actions,
+      .app-shell {
+        display: none !important;
+      }
+
+      #pdf-preview {
+        display: block !important;
+      }
+    }
+
+    /* ── PDF preview panel (hidden on screen, shown on print) ── */
+    #pdf-preview {
+      display: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      color-adjust: exact;
+      padding: 28px 32px 36px;
+      background: #fff;
+      color: #1d2516;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .pdf-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 3px solid #33421f;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+    }
+
+    .pdf-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pdf-brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      background: linear-gradient(145deg, #a9ba72, #667c3a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #17200d;
+    }
+
+    .pdf-brand-mark svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .pdf-brand-name {
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: #17200d;
+    }
+
+    .pdf-brand-sub {
+      font-size: 11px;
+      color: #6f775e;
+      margin-top: 2px;
+    }
+
+    .pdf-header-right {
+      text-align: right;
+    }
+
+    .pdf-month-label {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.045em;
+      color: #17200d;
+    }
+
+    .pdf-generated {
+      font-size: 10px;
+      color: #6f775e;
+      margin-top: 3px;
+    }
+
+    .pdf-section-title {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #526735;
+      margin: 20px 0 10px;
+    }
+
+    /* metric cards */
+    .pdf-metrics {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .pdf-metric {
+      border: 1px solid #e0e7cf;
+      border-radius: 14px;
+      padding: 12px 14px 14px;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pdf-metric::before {
+      content: '';
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: #7c914f;
+    }
+
+    .pdf-metric.total::before {
+      background: #33421f;
+    }
+
+    .pdf-metric.split::before {
+      background: #93a860;
+    }
+
+    .pdf-metric.pa::before {
+      background: #668346;
+    }
+
+    .pdf-metric.pb::before {
+      background: #a1ac6b;
+    }
+
+    .pdf-metric.due::before {
+      background: #9a6a08;
+    }
+
+    .pdf-metric.settled::before {
+      background: #2f6f3e;
+    }
+
+    .pdf-metric-label {
+      font-size: 9px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6f775e;
+    }
+
+    .pdf-metric-value {
+      font-size: 19px;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      color: #17200d;
+      margin-top: 10px;
+      display: block;
+    }
+
+    /* settlement */
+    .pdf-settlement {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      border: 1px solid #c6d9a1;
+      background: #e7f4e8;
+      margin-bottom: 18px;
+    }
+
+    .pdf-settlement.due-active {
+      background: #fff4d7;
+      border-color: #e8c66a;
+    }
+
+    .pdf-settlement-title {
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      color: #17200d;
+    }
+
+    .pdf-settlement-explain {
+      font-size: 11px;
+      color: #6f775e;
+      margin-top: 4px;
+    }
+
+    .pdf-settlement-amount {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      color: #17200d;
+      white-space: nowrap;
+    }
+
+    /* progress */
+    .pdf-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .pdf-card {
+      border: 1px solid #e0e7cf;
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: #fff;
+    }
+
+    .pdf-card-title {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: #17200d;
+      margin-bottom: 10px;
+    }
+
+    .pdf-progress-row {
+      margin-bottom: 10px;
+    }
+
+    .pdf-progress-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #6f775e;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .pdf-progress-track {
+      height: 10px;
+      border-radius: 999px;
+      background: #eef3e1;
+      overflow: hidden;
+    }
+
+    .pdf-progress-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #43552a, #b8c68d);
+    }
+
+    .pdf-ledger-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid #e0e7cf;
+      background: #f8faf2;
+      margin-bottom: 6px;
+    }
+
+    .pdf-ledger-title {
+      font-weight: 900;
+      font-size: 11.5px;
+      color: #17200d;
+    }
+
+    .pdf-ledger-meta {
+      font-size: 10px;
+      color: #6f775e;
+      margin-top: 2px;
+    }
+
+    .pdf-ledger-value {
+      font-weight: 900;
+      font-size: 12px;
+      white-space: nowrap;
+      color: #17200d;
+    }
+
+    /* expense table */
+    .pdf-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+      font-size: 11.5px;
+    }
+
+    .pdf-table th {
+      text-align: left;
+      padding: 7px 10px;
+      background: #f2f6e7;
+      color: #526735;
+      font-size: 9.5px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      border-bottom: 1px solid #e0e7cf;
+    }
+
+    .pdf-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #e8edda;
+      vertical-align: top;
+    }
+
+    .pdf-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .pdf-table tfoot td {
+      background: #f2f6e7;
+      border-top: 1px solid #e0e7cf;
+      border-bottom: none;
+      font-weight: 900;
+    }
+
+    .pdf-amount {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .pdf-cat-chip {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #eef3e1;
+      color: #526735;
+      border: 1px solid #d7e1bd;
+      margin-top: 3px;
+    }
+
+    /* breakdown */
+    .pdf-breakdown-item {
+      margin-bottom: 8px;
+    }
+
+    .pdf-breakdown-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #6f775e;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .pdf-breakdown-track {
+      height: 8px;
+      border-radius: 999px;
+      background: #eef3e1;
+      overflow: hidden;
+    }
+
+    .pdf-breakdown-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #43552a, #b8c68d);
+    }
+
+    /* footer */
+    .pdf-footer {
+      margin-top: 26px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e7cf;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      color: #6f775e;
+    }
+
+    .pdf-footer strong {
+      color: #17200d;
     }
   </style>
 </head>
+
 <body>
   <div class="app-shell">
     <aside class="sidebar" id="sidebar" aria-label="App navigation">
       <div class="brand-block">
         <div class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 21s7-4.2 7-11a7 7 0 0 0-14 0c0 6.8 7 11 7 11z"></path><path d="M12 14.5c1.9-2.1 2.9-4.4 2.7-7"></path><path d="M12 14.5c-1.9-2.1-2.9-4.4-2.7-7"></path></svg>
+          <svg viewBox="0 0 24 24" class="icon-svg">
+            <path d="M12 21s7-4.2 7-11a7 7 0 0 0-14 0c0 6.8 7 11 7 11z"></path>
+            <path d="M12 14.5c1.9-2.1 2.9-4.4 2.7-7"></path>
+            <path d="M12 14.5c-1.9-2.1-2.9-4.4-2.7-7"></path>
+          </svg>
         </div>
         <div>
           <h1 class="brand-title">Family Expense</h1>
@@ -1072,19 +1667,41 @@
       <p class="side-label">Navigation</p>
       <nav class="side-nav">
         <button class="nav-link active" type="button" data-nav="dashboard">
-          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg"><rect x="3" y="3" width="7" height="8" rx="2"></rect><rect x="14" y="3" width="7" height="5" rx="2"></rect><rect x="14" y="12" width="7" height="9" rx="2"></rect><rect x="3" y="15" width="7" height="6" rx="2"></rect></svg></span>
+          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg">
+              <rect x="3" y="3" width="7" height="8" rx="2"></rect>
+              <rect x="14" y="3" width="7" height="5" rx="2"></rect>
+              <rect x="14" y="12" width="7" height="9" rx="2"></rect>
+              <rect x="3" y="15" width="7" height="6" rx="2"></rect>
+            </svg></span>
           <span>Dashboard</span>
         </button>
         <button class="nav-link" type="button" data-nav="summary">
-          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M4 19V5"></path><path d="M4 19h16"></path><rect x="7" y="11" width="3" height="5" rx="1"></rect><rect x="12" y="7" width="3" height="9" rx="1"></rect><rect x="17" y="9" width="3" height="7" rx="1"></rect></svg></span>
+          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M4 19V5"></path>
+              <path d="M4 19h16"></path>
+              <rect x="7" y="11" width="3" height="5" rx="1"></rect>
+              <rect x="12" y="7" width="3" height="9" rx="1"></rect>
+              <rect x="17" y="9" width="3" height="7" rx="1"></rect>
+            </svg></span>
           <span>Summary</span>
         </button>
         <button class="nav-link" type="button" data-nav="expenses">
-          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M6 2v4"></path><path d="M18 2v4"></path><rect x="3" y="4" width="18" height="18" rx="3"></rect><path d="M8 11h8"></path><path d="M8 15h5"></path></svg></span>
+          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M6 2v4"></path>
+              <path d="M18 2v4"></path>
+              <rect x="3" y="4" width="18" height="18" rx="3"></rect>
+              <path d="M8 11h8"></path>
+              <path d="M8 15h5"></path>
+            </svg></span>
           <span>Expenses</span>
         </button>
         <button class="nav-link" type="button" data-nav="compare">
-          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M4 19h16"></path><path d="M7 16V9"></path><path d="M12 16V5"></path><path d="M17 16v-4"></path></svg></span>
+          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M4 19h16"></path>
+              <path d="M7 16V9"></path>
+              <path d="M12 16V5"></path>
+              <path d="M17 16v-4"></path>
+            </svg></span>
           <span>Monthly Compare</span>
         </button>
       </nav>
@@ -1092,7 +1709,12 @@
       <p class="side-label">System</p>
       <nav class="side-nav">
         <button class="nav-link" type="button" data-nav="settings">
-          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 0 1-4 0v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 0 1 0-4h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.88l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 0 1 4 0v.1A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.3.39.5.7.6 1.1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5.9z"></path></svg></span>
+          <span class="icon"><svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path>
+              <path
+                d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 0 1-4 0v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 0 1 0-4h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.88l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 0 1 4 0v.1A1.7 1.7 0 0 0 15 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.3.39.5.7.6 1.1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5.9z">
+              </path>
+            </svg></span>
           <span>Settings</span>
         </button>
       </nav>
@@ -1108,7 +1730,11 @@
       <header class="topbar">
         <div style="display:flex;align-items:flex-start;gap:12px;min-width:0">
           <button class="btn icon-btn mobile-menu-btn" type="button" id="mobileMenuBtn" aria-label="Open menu">
-            <svg viewBox="0 0 24 24" class="icon-svg"><path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h16"></path></svg>
+            <svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M4 6h16"></path>
+              <path d="M4 12h16"></path>
+              <path d="M4 18h16"></path>
+            </svg>
           </button>
           <div class="page-title-wrap">
             <p class="eyebrow" id="pageEyebrow">Family ledger</p>
@@ -1118,12 +1744,21 @@
         </div>
         <div class="toolbar">
           <div class="month-control" aria-label="Month controls">
-            <button class="btn icon-btn" id="prevMonthBtn" type="button" aria-label="Previous month"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M15 18l-6-6 6-6"></path></svg></button>
+            <button class="btn icon-btn" id="prevMonthBtn" type="button" aria-label="Previous month"><svg
+                viewBox="0 0 24 24" class="icon-svg">
+                <path d="M15 18l-6-6 6-6"></path>
+              </svg></button>
             <input class="month-input" id="monthInput" type="month" aria-label="Selected month">
-            <button class="btn icon-btn" id="nextMonthBtn" type="button" aria-label="Next month"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M9 18l6-6-6-6"></path></svg></button>
+            <button class="btn icon-btn" id="nextMonthBtn" type="button" aria-label="Next month"><svg
+                viewBox="0 0 24 24" class="icon-svg">
+                <path d="M9 18l6-6-6-6"></path>
+              </svg></button>
           </div>
           <button class="btn soft" id="thisMonthBtn" type="button">This month</button>
-          <button class="btn primary" type="button" data-open-expense><svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>Add expense</button>
+          <button class="btn primary" type="button" data-open-expense><svg viewBox="0 0 24 24" class="icon-svg">
+              <path d="M12 5v14"></path>
+              <path d="M5 12h14"></path>
+            </svg>Add expense</button>
         </div>
       </header>
 
@@ -1133,19 +1768,27 @@
             <article class="hero-card">
               <div class="hero-content">
                 <span class="status-pill" id="dashboardPeriod">Selected month</span>
-                <h2 class="hero-title" id="dashboardHeading">Monthly expense dashboard.</h2>
-                <p class="hero-copy" id="dashboardCopy">Track notebook-style monthly expense rows and the exact 50/50 settlement between both brothers.</p>
+                <h2 class="hero-title" id="dashboardHeading">Monthly expense dashboard</h2>
+                <p class="hero-copy" id="dashboardCopy">Our Family Expense Tracker</p>
               </div>
             </article>
           </div>
 
           <div class="summary-grid" aria-label="Dashboard summary">
             <article class="metric-card total">
-              <div class="metric-label">Total <span class="metric-icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 1v22"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"></path></svg></span></div>
+              <div class="metric-label">Total <span class="metric-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                    <path d="M12 1v22"></path>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg></span></div>
               <strong class="metric-value" id="dashTotalAmount">Rs.0</strong>
             </article>
             <article class="metric-card split">
-              <div class="metric-label">Split per person <span class="metric-icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 3v18"></path><path d="M5 7h14"></path><path d="M5 17h14"></path></svg></span></div>
+              <div class="metric-label">Split per person <span class="metric-icon"><svg viewBox="0 0 24 24"
+                    class="icon-svg">
+                    <path d="M12 3v18"></path>
+                    <path d="M5 7h14"></path>
+                    <path d="M5 17h14"></path>
+                  </svg></span></div>
               <strong class="metric-value" id="dashSplit">Rs.0</strong>
             </article>
             <article class="metric-card person-a">
@@ -1157,7 +1800,10 @@
               <strong class="metric-value" id="dashArshedPaid">Rs.0</strong>
             </article>
             <article class="metric-card due" id="dashDueCard">
-              <div class="metric-label">Due <span class="metric-icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M17 7l-10 10"></path><path d="M8 7h9v9"></path></svg></span></div>
+              <div class="metric-label">Due <span class="metric-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                    <path d="M17 7l-10 10"></path>
+                    <path d="M8 7h9v9"></path>
+                  </svg></span></div>
               <strong class="metric-value" id="dashDue">Rs.0</strong>
             </article>
           </div>
@@ -1240,11 +1886,13 @@
                 <div class="card-body">
                   <div class="progress-stack">
                     <div class="person-progress">
-                      <div class="progress-head"><span id="progressAshifLabel">Ashif</span><span id="progressAshifValue">0%</span></div>
+                      <div class="progress-head"><span id="progressAshifLabel">Ashif</span><span
+                          id="progressAshifValue">0%</span></div>
                       <div class="progress-bar"><span id="progressAshif"></span></div>
                     </div>
                     <div class="person-progress">
-                      <div class="progress-head"><span id="progressArshedLabel">Arshed</span><span id="progressArshedValue">0%</span></div>
+                      <div class="progress-head"><span id="progressArshedLabel">Arshed</span><span
+                          id="progressArshedValue">0%</span></div>
                       <div class="progress-bar"><span id="progressArshed"></span></div>
                     </div>
                   </div>
@@ -1272,11 +1920,15 @@
                 <h2 id="expensesHeading">Expenses</h2>
                 <p id="expensesSubtitle">Notebook-style monthly rows.</p>
               </div>
-              <button class="btn primary" type="button" data-open-expense><svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>Add expense</button>
+              <button class="btn primary" type="button" data-open-expense><svg viewBox="0 0 24 24" class="icon-svg">
+                  <path d="M12 5v14"></path>
+                  <path d="M5 12h14"></path>
+                </svg>Add expense</button>
             </div>
             <div class="card-body">
               <div class="filters" style="margin-bottom:14px">
-                <input class="input" id="searchInput" type="search" placeholder="Search description, category, or notes">
+                <input class="input" id="searchInput" type="search"
+                  placeholder="Search description, category, or notes">
                 <select class="select" id="categoryFilter" aria-label="Filter category"></select>
                 <span class="chip" id="expenseCount">0 entries</span>
               </div>
@@ -1313,7 +1965,11 @@
                 <h2 id="comparisonHeading">Monthly comparison</h2>
                 <p>Compare total expense, split, paid amounts, and due across months.</p>
               </div>
-              <button class="btn soft" type="button" id="printBtn"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>Print report</button>
+              <button class="btn soft" type="button" id="printBtn"><svg viewBox="0 0 24 24" class="icon-svg">
+                  <path d="M6 9V2h12v7"></path>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <path d="M6 14h12v8H6z"></path>
+                </svg>Print report</button>
             </div>
             <div class="card-body">
               <div class="table-wrap">
@@ -1374,13 +2030,15 @@
               </div>
               <div class="card-body">
                 <div class="grid" style="gap:10px">
-                  <button class="btn block" id="exportJsonBtn" type="button">Backup JSON</button>
-                  <button class="btn block" id="importJsonBtn" type="button">Import backup</button>
-                  <input class="sr-only" id="importFile" type="file" accept="application/json,.json">
-                  <button class="btn block" id="exportCsvBtn" type="button">Export selected month CSV</button>
+                  <button class="btn block primary" id="exportPdfBtn" type="button"><svg viewBox="0 0 24 24"
+                      class="icon-svg">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                      <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>Export Current Month PDF</button>
                   <button class="btn block" id="installTipsBtn" type="button">Install on iPad</button>
-                  <button class="btn block soft" id="loadDemoBtn" type="button">Load sample data</button>
-                  <button class="btn block danger" id="clearDataBtn" type="button">Clear all data</button>
                 </div>
               </div>
             </section>
@@ -1390,7 +2048,11 @@
     </div>
   </div>
 
-  <button class="fab" type="button" data-open-expense aria-label="Add expense"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></button>
+  <button class="fab" type="button" data-open-expense aria-label="Add expense"><svg viewBox="0 0 24 24"
+      class="icon-svg">
+      <path d="M12 5v14"></path>
+      <path d="M5 12h14"></path>
+    </svg></button>
 
   <div class="modal" id="expenseModal" role="dialog" aria-modal="true" aria-labelledby="expenseModalTitle">
     <div class="modal-panel">
@@ -1414,15 +2076,18 @@
             </div>
             <div class="field full">
               <label for="expenseDescription">Description</label>
-              <input class="input" id="expenseDescription" type="text" placeholder="Groceries, electricity, medicine..." required>
+              <input class="input" id="expenseDescription" type="text" placeholder="Groceries, electricity, medicine..."
+                required>
             </div>
             <div class="field">
               <label for="expenseAshif" id="expenseAshifLabel">Ashif paid</label>
-              <input class="input" id="expenseAshif" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0">
+              <input class="input" id="expenseAshif" type="number" inputmode="decimal" min="0" step="0.01"
+                placeholder="0">
             </div>
             <div class="field">
               <label for="expenseArshed" id="expenseArshedLabel">Arshed paid</label>
-              <input class="input" id="expenseArshed" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0">
+              <input class="input" id="expenseArshed" type="number" inputmode="decimal" min="0" step="0.01"
+                placeholder="0">
             </div>
             <div class="field full">
               <label for="expenseNotes">Notes</label>
@@ -1452,7 +2117,8 @@
         <div class="settlement-panel">
           <div>
             <h2 class="settlement-title">iPad install steps</h2>
-            <p class="settlement-copy">Open the hosted website in Safari, tap Share, choose Add to Home Screen, then tap Add. Your data is stored on that device, so use Backup JSON regularly.</p>
+            <p class="settlement-copy">Open the hosted website in Safari, tap Share, choose Add to Home Screen, then tap
+              Add. Your data is stored on that device, so use Backup JSON regularly.</p>
           </div>
         </div>
       </div>
@@ -1460,6 +2126,9 @@
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- PDF preview: hidden on screen, rendered on print -->
+  <div id="pdf-preview" aria-hidden="true"></div>
 
   <script>
     const STORAGE_KEY = 'family-expense-tracker-v1';
@@ -2061,6 +2730,172 @@
       showToast('All data cleared.');
     }
 
+    /* ─────────────────────────────────────────────────────────────
+       PDF Export – generates a rich print-ready summary panel
+    ───────────────────────────────────────────────────────────── */
+    function exportMonthPdf() {
+      const names = getNames();
+      const totals = monthlyTotals(currentMonth);
+      const cats = categoryTotals(currentMonth);
+      const expenses = state.expenses
+        .filter((item) => item.date.slice(0, 7) === currentMonth)
+        .sort((a, b) => a.date.localeCompare(b.date));
+
+      const label = monthLabel(currentMonth);
+      const currency = state.settings.currency || 'Rs.';
+      const now = new Date().toLocaleDateString('en-IN', { day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+      const ashifPct = Math.min(100, Math.round((totals.ashifPaid / Math.max(1, totals.total)) * 100));
+      const arshedPct = Math.min(100, Math.round((totals.arshedPaid / Math.max(1, totals.total)) * 100));
+
+      const catMax = Math.max(1, ...cats.map((c) => c[1]));
+      const catsHtml = cats.length
+        ? cats.map(([name, amount]) => {
+          const pct = Math.max(4, Math.round((amount / catMax) * 100));
+          return `<div class="pdf-breakdown-item">
+              <div class="pdf-breakdown-head"><span>${escapeHtml(name)}</span><span>${escapeHtml(money(amount))}</span></div>
+              <div class="pdf-breakdown-track"><div class="pdf-breakdown-fill" style="width:${pct}%"></div></div>
+            </div>`;
+        }).join('')
+        : '<div style="color:#6f775e;font-size:11px">No category data for this month.</div>';
+
+      const expensesHtml = expenses.length
+        ? expenses.map((item) => {
+          const total = toAmount(item.ashif) + toAmount(item.arshed);
+          const notes = item.notes ? `<div style="color:#6f775e;font-size:10px;margin-top:3px">${escapeHtml(item.notes)}</div>` : '';
+          return `<tr>
+              <td>${escapeHtml(dateLabel(item.date))}</td>
+              <td><strong>${escapeHtml(item.description)}</strong><span class="pdf-cat-chip">${escapeHtml(item.category || 'Other')}</span>${notes}</td>
+              <td class="pdf-amount">${escapeHtml(money(item.ashif))}</td>
+              <td class="pdf-amount">${escapeHtml(money(item.arshed))}</td>
+              <td class="pdf-amount"><strong>${escapeHtml(money(total))}</strong></td>
+            </tr>`;
+        }).join('')
+        : `<tr><td colspan="5" style="text-align:center;color:#6f775e;padding:14px">No expenses recorded for this month.</td></tr>`;
+
+      const settledClass = totals.settlement.settled ? '' : ' due-active';
+      const dueMetricClass = totals.settlement.settled ? 'settled' : 'due';
+
+      const ledger = [
+        ['Total amount', money(totals.total), `${totals.expenseRows.length} monthly expense row(s).`],
+        ['Split per person', money(totals.share), 'Equal 50/50 share.'],
+        [`${names.ashif} paid`, money(totals.ashifPaid), `${money(Math.abs(totals.ashifPaid - totals.share))} ${totals.ashifPaid >= totals.share ? 'above' : 'below'} share.`],
+        [`${names.arshed} paid`, money(totals.arshedPaid), `${money(Math.abs(totals.arshedPaid - totals.share))} ${totals.arshedPaid >= totals.share ? 'above' : 'below'} share.`],
+        ['Due between brothers', money(totals.settlement.amount), totals.settlement.text]
+      ];
+      const ledgerHtml = ledger.map(([title, value, note]) =>
+        `<div class="pdf-ledger-row">
+          <div><div class="pdf-ledger-title">${escapeHtml(title)}</div><div class="pdf-ledger-meta">${escapeHtml(note)}</div></div>
+          <div class="pdf-ledger-value">${escapeHtml(value)}</div>
+        </div>`
+      ).join('');
+
+      $('#pdf-preview').innerHTML = `
+        <!-- HEADER -->
+        <div class="pdf-header">
+          <div class="pdf-brand">
+            <div class="pdf-brand-mark">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-4.2 7-11a7 7 0 0 0-14 0c0 6.8 7 11 7 11z"></path><path d="M12 14.5c1.9-2.1 2.9-4.4 2.7-7"></path><path d="M12 14.5c-1.9-2.1-2.9-4.4-2.7-7"></path></svg>
+            </div>
+            <div>
+              <div class="pdf-brand-name">Family Expense</div>
+              <div class="pdf-brand-sub">${escapeHtml(names.ashif)} &amp; ${escapeHtml(names.arshed)} monthly ledger</div>
+            </div>
+          </div>
+          <div class="pdf-header-right">
+            <div class="pdf-month-label">${escapeHtml(label)}</div>
+            <div class="pdf-generated">Generated ${escapeHtml(now)}</div>
+          </div>
+        </div>
+
+        <!-- METRIC CARDS -->
+        <div class="pdf-section-title">Month at a Glance</div>
+        <div class="pdf-metrics">
+          <div class="pdf-metric total">
+            <div class="pdf-metric-label">Total</div>
+            <span class="pdf-metric-value">${escapeHtml(money(totals.total))}</span>
+          </div>
+          <div class="pdf-metric split">
+            <div class="pdf-metric-label">Split per person</div>
+            <span class="pdf-metric-value">${escapeHtml(money(totals.share))}</span>
+          </div>
+          <div class="pdf-metric pa">
+            <div class="pdf-metric-label">${escapeHtml(names.ashif)} paid</div>
+            <span class="pdf-metric-value">${escapeHtml(money(totals.ashifPaid))}</span>
+          </div>
+          <div class="pdf-metric pb">
+            <div class="pdf-metric-label">${escapeHtml(names.arshed)} paid</div>
+            <span class="pdf-metric-value">${escapeHtml(money(totals.arshedPaid))}</span>
+          </div>
+          <div class="pdf-metric ${dueMetricClass}">
+            <div class="pdf-metric-label">Due</div>
+            <span class="pdf-metric-value">${escapeHtml(money(totals.settlement.amount))}</span>
+          </div>
+        </div>
+
+        <!-- SETTLEMENT PANEL -->
+        <div class="pdf-settlement${settledClass}">
+          <div>
+            <div class="pdf-settlement-title">${escapeHtml(totals.settlement.text)}</div>
+            <div class="pdf-settlement-explain">${escapeHtml(totals.settlement.explain)}</div>
+          </div>
+          <div class="pdf-settlement-amount">${escapeHtml(money(totals.settlement.amount))}</div>
+        </div>
+
+        <!-- PAYMENT BALANCE + LEDGER -->
+        <div class="pdf-two">
+          <div class="pdf-card">
+            <div class="pdf-card-title">Payment Balance</div>
+            <div class="pdf-progress-row">
+              <div class="pdf-progress-head"><span>${escapeHtml(names.ashif)}</span><span>${ashifPct}% paid</span></div>
+              <div class="pdf-progress-track"><div class="pdf-progress-fill" style="width:${ashifPct}%"></div></div>
+            </div>
+            <div class="pdf-progress-row">
+              <div class="pdf-progress-head"><span>${escapeHtml(names.arshed)}</span><span>${arshedPct}% paid</span></div>
+              <div class="pdf-progress-track"><div class="pdf-progress-fill" style="width:${arshedPct}%"></div></div>
+            </div>
+          </div>
+          <div class="pdf-card">
+            <div class="pdf-card-title">Summary Ledger</div>
+            ${ledgerHtml}
+          </div>
+        </div>
+
+        <!-- EXPENSE TABLE -->
+        <div class="pdf-section-title">All Expenses</div>
+        <table class="pdf-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th class="pdf-amount">${escapeHtml(names.ashif)} paid</th>
+              <th class="pdf-amount">${escapeHtml(names.arshed)} paid</th>
+              <th class="pdf-amount">Total</th>
+            </tr>
+          </thead>
+          <tbody>${expensesHtml}</tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Grand total</td>
+              <td class="pdf-amount">${escapeHtml(money(totals.total))}</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <!-- CATEGORY BREAKDOWN -->
+        <div class="pdf-section-title" style="margin-top:20px">Category Breakdown</div>
+        ${catsHtml}
+
+        <!-- FOOTER -->
+        <div class="pdf-footer">
+          <span>Family Expense &mdash; ${escapeHtml(names.ashif)} &amp; ${escapeHtml(names.arshed)}</span>
+          <span><strong>${escapeHtml(label)}</strong> &nbsp;&middot;&nbsp; ${escapeHtml(String(expenses.length))} expense(s) &nbsp;&middot;&nbsp; Total: <strong>${escapeHtml(money(totals.total))}</strong></span>
+        </div>
+      `;
+
+      window.print();
+    }
+
     function showToast(message) {
       const toast = $('#toast');
       toast.textContent = message;
@@ -2109,16 +2944,8 @@
         if (button.dataset.action === 'delete-expense') deleteExpense(id);
       });
       $('#saveSettingsBtn').addEventListener('click', saveSettings);
-      $('#exportJsonBtn').addEventListener('click', exportJson);
-      $('#importJsonBtn').addEventListener('click', () => $('#importFile').click());
-      $('#importFile').addEventListener('change', (event) => {
-        importJson(event.target.files && event.target.files[0]);
-        event.target.value = '';
-      });
-      $('#exportCsvBtn').addEventListener('click', exportCsv);
+      $('#exportPdfBtn').addEventListener('click', exportMonthPdf);
       $('#installTipsBtn').addEventListener('click', () => openModal('#installModal'));
-      $('#loadDemoBtn').addEventListener('click', loadDemoData);
-      $('#clearDataBtn').addEventListener('click', clearAllData);
       $('#printBtn').addEventListener('click', () => window.print());
       document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') closeModals();
@@ -2134,4 +2961,5 @@
     }
   </script>
 </body>
+
 </html>
